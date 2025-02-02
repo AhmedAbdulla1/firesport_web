@@ -19,8 +19,8 @@ const db = getFirestore(app);
 const addUser = async () => {
   try {
     const docRef = await addDoc(collection(db, "users"), {
-      name: "ayman",
-      age: 22``
+      name: "test",
+      age: 22
     });
     console.log("تمت إضافة المستخدم، ID:", docRef.id);
   } catch (error) {
@@ -28,3 +28,4 @@ const addUser = async () => {
   }
 };
 
+addUser()
