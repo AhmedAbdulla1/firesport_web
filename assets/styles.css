@@ -1,0 +1,164 @@
+body {
+    direction: rtl;
+}
+
+header .container {
+    padding-inline: 30px;
+}
+
+@media (max-width: 600px) {
+    header .container {
+        padding-inline: 20px;
+    }
+}
+
+/* Chrome, Safari, Edge */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none; 
+    color: #444;
+}
+
+nav a:hover,nav a.active {
+    color: #0d6efd;
+}
+
+h5{
+  direction: ltr;
+}
+/* .suggestion-container {
+    position: relative; 
+}
+
+.suggestions {
+    visibility: hidden;
+    position: absolute; 
+    border: 1px solid #ddd; 
+    max-height: 300px;
+    overflow-y: auto;
+    width: 100%; 
+    background-color: white;
+    z-index: 3;
+}
+
+.suggestion-item {
+    color: #777; 
+    padding: 8px;
+    cursor: pointer;
+} */
+
+.card {
+  cursor: pointer;
+    overflow: hidden; 
+    height: 100%; 
+}
+
+.img-container {
+    position: relative;
+    height: 200px;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+.card .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px 10px 0 0; 
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  /* height: 100%;  */
+}
+
+.brand {
+    font-size: 1rem;
+    display: flex;
+    gap: 7px; 
+}
+
+p.brand,
+p.fixed {
+    color: #555; 
+    font-weight: 700; 
+    margin-bottom: 0; 
+}
+
+p.price {
+    font-size: 1.2rem;  
+    font-weight: bold; 
+    color: red; 
+    display: flex; 
+    gap: 10px; 
+    margin-bottom: 0;
+}
+
+.purchase {
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    gap: 10px;
+}
+.whatsapp-btn {
+    text-decoration: none;
+    color: white;
+    background-color: green;
+    font-weight: bold;
+    padding: 5px 30px 10px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input[type='search'] {
+    margin-inline: 10px;
+    padding: 15px;
+    text-align: right;
+}
+
+@media (min-width: 576px) {
+    .container, .container-sm {
+        max-width: 90vw;
+    }
+}
+
+
+@media (max-width:575px){
+  h5{
+    font-size: 1.4rem;
+  }
+  .brand{
+    font-size: 1.2rem;
+  }
+  p.price{
+    font-size: 1.4rem;
+  }
+}
+
+p.error{
+  font-size: 0.9rem;
+  color: red;
+}
