@@ -28,4 +28,4 @@ const addUser = async () => {
   }
 };
 
-addUser()
+// addUser()
