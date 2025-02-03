@@ -1,16 +1,9 @@
-
-
 //////////////////////////////////
 // 🔹whatsapp link
-// const whatsappLinks = document.querySelectorAll('.whatsapp-btn');
-
-//   function isMobile() {
-//     console.log(navigator.userAgent);
-//     return /Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i.test(navigator.userAgent);
-//   }
-
-//   if (isMobile()) {
-//     whatsappLinks.forEach(link=>link.href = "whatsapp://send?phone=201007719507&text=test%20text")
-//   } else {
-//     whatsappLinks.forEach(link=>link.href = "https://web.whatsapp.com/send?phone=201007719507&text=test%20text")
-//   }
+const whatsappLinks = document.querySelectorAll(".whatsapp-btn");
+if (window.outerWidth > 767) {
+  whatsappLinks.forEach((link) => {
+    link.href =
+      "https://wa.me/201007719507?text=examble%20text%20for%20test%20purposes";
+  });
+}
